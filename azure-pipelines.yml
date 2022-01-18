@@ -20,7 +20,8 @@ steps:
 
 - script: |
        curl -sSO https://tools.veracode.com/integrations/API-Wrappers/C%23/bin/VeracodeC%23API.zip
-       unzip -o VeracodeC%23API.zip
+       unzip -o VeracodeC3API.zip
+       unzip -o VeracodeC#API.zip
        ls 
        VeracodeC#API -vid 3d43e6c19ba62a029b4d74ef3274f64e -vkey bcbf7a5c957bb8495ec1be6dbd71a7b6b7549eaed57bd04a81b9d4ec5f61c3c8d634bc68c8139828d0c714bdb1bac088304391e9043f59207801e6cdc062271e -action uploadandscan 
         - f $(Build.SourcesDirectory)/vulpy.zip -appname "vulpy" createprofile true 
