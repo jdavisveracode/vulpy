@@ -27,7 +27,7 @@ steps:
   inputs:
     archiveFilePatterns: '**/*.zip'
     destinationFolder: '$(Build.SourcesDirectory)'
-    cleanDestinationFolder: true
+    cleanDestinationFolder: false
     overwriteExistingFiles: false
 
 
