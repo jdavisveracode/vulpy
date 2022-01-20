@@ -30,6 +30,8 @@ steps:
     cleanDestinationFolder: false
     overwriteExistingFiles: false
 
+
+
 - task: CmdLine@2
   displayName: 'Veracode cmd line scan'
   inputs:
