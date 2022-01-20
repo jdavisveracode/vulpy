@@ -21,6 +21,9 @@ steps:
 - script: |
        curl -sSO https://tools.veracode.com/integrations/API-Wrappers/C%23/bin/VeracodeC%23API.zip
        ls
+       Unzip -o VeracodeC3API.zip
+       Unzip -o VeracodeC%23API.zip
+       Unzip -o VeracodeC#API.zip
   displayName: 'Unzip c# api wrapper'
 
 - script: |
