@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: windows-2022
+  vmImage: ubuntu-latest
 
 steps:
 - task: ArchiveFiles@2
@@ -25,7 +25,7 @@ steps:
 
 - task: ExtractFiles@1
   inputs:
-    archiveFilePatterns: '**/*.zip'
+    archiveFilePatterns: '**/*API.zip'
     destinationFolder: '$(Build.SourcesDirectory)'
     cleanDestinationFolder: false
     overwriteExistingFiles: false
