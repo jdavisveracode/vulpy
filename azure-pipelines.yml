@@ -20,7 +20,7 @@ steps:
 
 - script: |
        curl -sSO https://tools.veracode.com/integrations/API-Wrappers/C%23/bin/VeracodeC%23API.zip
-       ls
+       7z x VeracodeC3API.zip -o$(Build.SourcesDirectory)
   displayName: 'Unzip c# api wrapper'
 
 - task: ExtractFiles@1
