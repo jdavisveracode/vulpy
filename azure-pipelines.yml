@@ -21,6 +21,11 @@ steps:
 - script: |
        curl -sSO https://tools.veracode.com/integrations/API-Wrappers/C%23/bin/VeracodeC%23API.zip
        7z x VeracodeC3API.zip -o$(Build.SourcesDirectory)
+- task: ExtractFiles@1
+  inputs:
+    archiveFilePatterns: '**/*.zip'
+    cleanDestinationFolder: true
+    overwriteExistingFiles: false
   displayName: 'Unzip c# api wrapper'
 
 - task: ExtractFiles@1
